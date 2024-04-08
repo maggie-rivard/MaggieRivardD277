@@ -1,0 +1,267 @@
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.homeMenu {
+    background-color: #444;
+    height: 250px;
+}
+
+.menu {
+    background: #444;
+    height: 80px;
+}
+
+.menu::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    cursor: pointer;
+    float: left;
+    padding: px 0;
+    height: 75px;
+    padding-top: 2.5px;
+}
+
+.container nav {
+    float: right;
+}
+
+.container nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container nav li {
+    display: inline-block;
+    margin-left: 10px;
+    padding-top: 0px;
+
+    position: relative;
+}
+
+.highlightBar {
+    color: #f2f2f2;
+    padding: 31px 0px 31px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.highlightBar:hover {
+    color: #727272;
+}
+
+.highlightBar::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #ff9900;
+
+    position: absolute;
+    bottom: 43px;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+.highlightBar:hover::before {
+    width: 100%;
+}
+
+.dropbtn {
+    color: #f2f2f2;
+    background-color: #444;
+    padding: 31px 0px 31px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    transform: translateX(-25px);
+    z-index: 1;
+}
+
+.dropdownContent a, .dropContent a {
+    color: #f2f2f2;
+    padding: 10px 120px 10px 15px; 
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: grid;
+}
+
+.dropContent {
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    background-color: #444;
+    transform: translateX(-195px);
+    z-index: 1;
+}
+
+.port {
+    text-align: right;
+    transform: translateX(100px);
+}
+
+.port:hover {
+    color: #727272;
+}
+
+.port::before {
+    content: '';
+    display: grid;
+    height: 3px;
+    background-color: #ff9900;
+    float: right;
+
+    position: absolute;
+    bottom: 35px;
+    transform: translateX(-105px);
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+.port:hover::before {
+    width: 100%;
+}
+
+.city:hover {
+    color: #727272;
+}
+
+.city::before {
+    content: '';
+    display: grid;
+    height: 3px;
+    background-color: #ff9900;
+
+    position: absolute;
+    bottom: 35px;
+    transform: translateX(-25px);
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+.city:hover::before {
+    width: 100%;
+}
+
+.dropdown:hover .dropdownContent, .dropdown:hover .dropContent {
+    display: grid;
+}
+
+.dropdown:hover .dropbtn {
+    color: #727272;
+}
+
+#firstName, #lastName, #email, #emailV, #message {
+    font-size: large;
+    font-family: monospace;
+}
+  
+#submit {
+    background-color: #ff9900;
+    border-color: #444;
+    height: 40px;
+    width: 200px;
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #444;
+}
+  
+#submit:hover {
+    background-color: #444;
+    border-color: #ff9900;
+    color: #f2f2f2;
+}
+  
+.warn {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 150vh;
+    z-index: 20;
+    background-color: #f2f2f250;
+}
+  
+.done {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 150vh;
+    z-index: 20;
+    background-color: #f2f2f250;
+}
+  
+.warn aside, .done aside {
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 25%;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 0 #444;
+}
+ 
+.warn aside h2, .done aside h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+  
+.warn aside p, .done aside p {
+    color: #444; 
+    margin: 0;
+}
+  
+#close {
+    margin-top: 30px;
+    background-color: #444;
+    border-radius: 25px;
+    color: #f2f2f2;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+  
+#close:hover {
+    background-color: #727272;
+    color: #ff9900;
+}
+
+.doStuff {
+    text-align: center;
+    margin: auto;
+}
+
+.doStuff h2 {
+    text-align: center;
+    padding: 0;
+}

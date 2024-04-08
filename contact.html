@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/pageStyles.css">
+        <script src="scripts/scripts.js"></script>
+        <link rel="shortcut icon" href="assets/floridaIcon.png">
+
+        <title>Contact Us</title>
+        
+    </head>
+
+    <body>
+        <header class="menu">
+            <div class="container">
+                <a href="home.html"><img src="assets/logoOrange.png" alt="Florida Logo" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="home.html" class="highlightBar">Home</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">Cities</button>
+                                <ul class="dropdownContent">
+                                    <li><a href="tallahassee.html" class="city">Tallahassee</a></li>
+                                    <li><a href="pensacola.html" class="city">Pensacola</a></li>
+                                    <li><a href="tampa.html" class="city">Tampa</a></li>
+                                    <li><a href="miami.html" class="city">Miami</a></li>
+                                    <li><a href="jacksonville.html" class="city">Jacksonville</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="todo.html" class="highlightBar">Things To Do</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn"><a href="portal.html" style="color: #f2f2f2; text-decoration: none;">Portal</a></button>
+                                <ul class="dropContent" style="transform: translateX(-172px);">
+                                    <li><a href="contact.html" class="port">Contact Us</a></li>
+                                    <li><a href="pay.html" class="port">Pay Bills</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <br style="line-height: 100px;">
+
+        <section style="width: 800px; margin: auto; max-width: 100%;">
+            <table style="margin: auto;">
+                <form>
+                    <tr style="text-align: left; line-height: 40px;">
+                        <td><label for="firstName">First Name:</label></td>
+                        <td><label for="lastName">Last Name:</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" size="35px" name="firstName" id="firstName" placeholder="First Name" style="border-radius: 5px;"></td>
+                        <td><input type="text" size="35px" name="lastName" id="lastName" placeholder="Last Name" style="border-radius: 5px;"></td>
+                    </tr>
+
+                    <tr style="text-align: left; line-height: 40px;">
+                        <td><label for="email">Email Address:</label></td>
+                        <td><label for="emailV">Confirm Email Address:</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" size="35px" name= "email" id="email" placeholder="Email Address" style="border-radius: 5px;"></td>
+                        <td><input type="text" size="35px" name= "emailV" id="emailV" placeholder="Confim Email Address" style="border-radius: 5px;"></td>
+                    </tr>
+
+                    <tr style="text-align: left; line-height: 40px;">
+                        <td colspan="2"><label for="message">Message:</label></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><textarea rows="10" cols="72" name= "message" id="message" placeholder="Type message here..." style="border-radius: 5px;"></textarea></td>
+                    </tr>
+
+                    <tr style="text-align: center; line-height: 80px;">
+                        <td colspan="2"><input type="button" id="submit" value="SUBMIT" onclick="confirm()" style="border-radius: 25px;"></td>
+                    </tr>
+                </form>    
+            </table>
+        </section>
+    
+        <section class="warn">
+            <aside>
+                <h2>WARNING!</h2>
+                <p>The email addresses you typed in do not match!</p>
+                <p>Please verify that your information is correct!</p>
+                <form><input type="submit" value="CLOSE" id="close"></form>
+            </aside>
+        </section>
+
+        <section class="done">
+            <aside>
+                <h2>SUBMITTED!</h2>
+                <p>Thank you for contacting us!</p>
+                <p>Your message has been sent.</p>
+                <form><input type="submit" value="CLOSE" id="close"></form>
+            </aside>
+        </section>
+
+        <br style="line-height: 200px;">
+        
+        <section>
+            <aside>
+                <div class="grass">
+                    <img src="assets/sign.png" alt="Florida Sign" class="roadSign" id="center">
+                </div>
+            </aside>
+        </section>
+
+        <section style="background-color: #444; height: 125px;">
+            <aside>
+                <ul class="contactIcon">
+                    <li><a href="https://www.instagram.com/florida/" target="_blank"><img style="height: 45px;" src="assets/instagram.svg" alt="Instagram" link></a></li>
+                    <li><a href="https://twitter.com/visitflorida?lang=en" target="_blank"><img style="height: 45px;" src="assets/twitter-x.svg" alt="X" link></a></li>
+                    <li><a href="https://www.facebook.com/VISITFLORIDA/" target="_blank"><img style="height: 45px;" src="assets/facebook.svg" alt="FaceBook" link></a></li>                        
+                </ul>
+            </aside>
+        </section>
+
+    </body>
+</html>

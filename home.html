@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/homeStyles.css">
+    <script src="scripts/scripts.js"></script>
+    <link rel="shortcut icon" href="assets/floridaIcon.png">
+
+    <title>Florida</title>
+
+  </head>
+
+  <body>
+    <header class="homeMenu">
+      <div class="menuContainer">
+        <img src="assets/logoOrange.png" alt="Florida Logo" class="homeLogo">
+        <nav>
+          <ul>
+            <li><a href="home.html" class="highlightBar">Home</a></li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn">Cities</button>
+                <ul class="dropdownContent">
+                  <li><a href="tallahassee.html" class="city">Tallahassee</a></li>
+                  <li><a href="pensacola.html" class="city">Pensacola</a></li>
+                  <li><a href="tampa.html" class="city">Tampa</a></li>
+                  <li><a href="miami.html" class="city">Miami</a></li>
+                  <li><a href="jacksonville.html" class="city">Jacksonville</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="todo.html" class="highlightBar">Things To Do</a></li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn"><a href="portal.html" style="color: #f2f2f2; text-decoration: none;">Portal</a></button>
+                <ul class="dropdownContent">
+                  <li><a href="contact.html" class="city">Contact Us</a></li>
+                  <li><a href="pay.html" class="city">Pay Bills</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <header>
+        <h1>Florida</h1>
+      </header>
+      <aside>
+        <p>Welcome to the offical website for all things Florida!</p>
+      </aside>
+    </section>
+
+    <section>
+      <div class="slideshowContainer">
+        <div class="slides fade">
+          <div class="number">1 / 4</div>
+          <img src="assets/beachhouse.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+                  
+        <div class="slides fade">
+          <div class="number">2 / 4</div>
+          <img src="assets/beachpeople.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+                  
+        <div class="slides fade">
+          <div class="number">3 / 4</div>
+          <img src="assets/buildings.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <div class="slides fade">
+          <div class="number">4 / 4</div>
+          <img src="assets/pier.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+                  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+    
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+      <script>
+        currentSlide(1);
+      </script>
+
+    </section>
+
+    <br style="line-height: 50px;">
+
+    <section style="width: 1000px; margin: auto; max-width: 100%;"> 
+      <header>
+        <h2 style="margin-left: 14%; text-shadow: #ff9900 1px 2px 0; font-size: 40px;">Popular Cities</h2>
+      </header>            
+      <ol class="blockList">
+        <li><a href="tallahassee.html" class="block1">Tallahassee</a></li>
+        <li><a href="tampa.html" class="block2">Tampa</a></li>
+        <li><a href="pensacola.html" class="block3">Pensacola</a></li>
+        <li><a href="miami.html" class="block4">Miami</a></li>
+        <li><a href="jacksonville.html" class="block5">Jacksonville</a></li>
+      </ol>
+    </section>
+
+    <br style="line-height: 50px;">
+
+    <section style="background-color: #444; padding: 100px; margin: auto; max-width: 100%;">
+      <table style="margin: auto;">
+        <tr style="line-height: 100px;">
+          <th colspan="3"><a href="todo.html" style="color: #f2f2f2; font-size: 40px; text-decoration: none;">Things To Do</a></th>
+        </tr>
+
+        <tr style="line-height: 50px;">
+          <td><a href="todo.html#shopping"><img src="assets/shopping.png" height="150px"></a></td>
+          <td><a href="todo.html#beaches"><img src="assets/beachIcon.png" height="150px"></a></td>
+          <td><a href="todo.html#alligators"><img src="assets/alligator.png" height="150px"></a></td>
+        </tr>
+
+        <tr style="line-height: 50px;">
+          <td><a href="todo.html#attractions"><img src="assets/attraction.png" height="150px"></a></td>
+          <td><a href="todo.html#cruises"><img src="assets/cruise.png" height="150px"></a></td>
+          <td><a href="todo.html#restaurants"><img src="assets/restaurant.png" height="150px"></a></td>
+        </tr>
+      </table>
+    </section>
+
+    <br style="line-height: 50px;">
+
+    <section style="padding: 50px;">
+      <table style="margin: auto;">
+        <tr style="line-height: 100px;">
+          <th colspan="2"><a href="portal.html" style="color: #444; text-shadow: #ff9900 1px 2px 0; font-size: 40px; text-decoration: none;">Florida Portal</a></th>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="contact.html"><img src="assets/call.png" height="250px"></a>
+            <div class="call">Contact Us</div>
+          </td>
+          <td>
+            <a href="pay.html"><img src="assets/pay.png" height="250px"></a>
+            <div class="bills">Pay Bills</div>
+          </td>
+      </tr>
+      </table>
+    </section>
+
+    <br style="line-height: 200px;">
+        
+    <section>
+      <div class="grass">
+        <img src="assets/sign.png" alt="Florida Sign" class="roadSign" id="center">
+      </div>
+    </section>
+
+    <section style="background-color: #444; height: 125px;">
+      <aside>
+        <ul class="contactIcon">
+          <li><a href="https://www.instagram.com/florida/" target="_blank"><img style="height: 45px;" src="assets/instagram.svg" alt="Instagram" link></a></li>
+          <li><a href="https://twitter.com/visitflorida?lang=en" target="_blank"><img style="height: 45px;" src="assets/twitter-x.svg" alt="X" link></a></li>
+          <li><a href="https://www.facebook.com/VISITFLORIDA/" target="_blank"><img style="height: 45px;" src="assets/facebook.svg" alt="FaceBook" link></a></li>                        
+        </ul>
+      </aside>
+    </section>
+
+  </body>
+</html>
